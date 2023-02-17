@@ -1,10 +1,13 @@
+import "./App.css";
 import React from 'react'
-
+import Dashboard from './Dashboard/Dashboard'
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline bg-red-900">
-      Hello world!
-    </h1>
+   <> 
+   <Dashboard/>
+   
+   
+   </>
   )
 }
 

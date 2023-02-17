@@ -34,7 +34,7 @@ exports.saveUser = async (req, res) => {
 
 exports.getUsers = async (req, res) => {
   try {
-    // console.log("hi");
+    // console.log("hi"); 
     const token = req.params.token;
     let id;
     jwt.verify(token, "mesaf", function (err, decoded) {
