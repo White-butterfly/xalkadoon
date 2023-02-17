@@ -106,7 +106,7 @@ function NavBar() {
             </Link>
           </li> */}
           <li>
-            <Link to="/RecepHome">
+            <Link to="/AllData">
               <a href="">
                 <i className="bx bxs-message-dots"></i>
                 <span className="text">Regions</span>

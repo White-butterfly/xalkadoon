@@ -6,12 +6,12 @@ import axios from "axios";
 import Moment from "react-moment";
 
 const AllData = () => {
-	const [Asset, setAsset] = useState([]);
-	// useEffect(() => {
-	// 	axios
-	// 	  .get(`http://localhost:1000/api/Asset`)
-	// 	  .then((res) => setAsset(res.data.data));
-	//       });
+	const [Region, setRegion] = useState([]);
+	useEffect(() => {
+		axios
+		  .get(`http://localhost:7000/api/region`)
+		  .then((res) => setRegion(res.data.data));
+	      });
 
   return (
  <div>
@@ -20,7 +20,7 @@ const AllData = () => {
           <div className="table-data">
             <div className="order">
               <div className="head">
-                <h3>Asset System</h3>
+                <h3> Xalkadoon </h3>
                 <i className="">
                   {/* <ReactHTMLTableToExcel
                     className="ne-flex sm:ml-3 mt-4 sm:mt-0 items-start justify-start px-6 py-3 bg-green-700 hover:bg-green-600 focus:outline-none rounded mr-70 text-white"
@@ -35,24 +35,21 @@ const AllData = () => {
                 <thead>
                   <tr>
                     <th>NO</th>
-                    <th>Qalabka</th>
-                    <th>Tirada</th>
-                    <th>Sumada</th>
-                    <th>Gaadhiga</th>
-                    <th>Taariikh</th>
+                    <th>region</th>
+                    <th>rainfallAmount</th>
+                    <th> probability</th>
+                   
                   </tr>
                 </thead>
                 <tbody>
-                  {Asset.map((asset, id) => (
+                  {Region.map((region, id) => (
                     <tr>
                       <td>{id + 1}</td>
-                      <td>asset.qalabka</td>
-                      <td>asset.tirada</td>
-                      <td>asset.sumada</td>
-                      <td>asset.gaadhiga</td>
-                      <td>
-                        <Moment format="Do MMM YYYY">date</Moment>
-                      </td>
+                      <td>{region.region}</td>
+                      <td>{region.rainfallAmount}mm</td>
+                      <td>{region.probability}</td>
+                      
+                     
                     </tr>
                   ))}
                 </tbody>

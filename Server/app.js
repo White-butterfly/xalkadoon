@@ -17,7 +17,8 @@ app.use(cors());
 
 //  routes and middle ware
 app.use("/api/User", require("./Routers/Auth/authRoutes"));
+app.use("/api/region", require("./Routers/Region/regionRoutes"));
+app.use("/api/admin", require("./Routers/Admin/adminRoutes"));
 
-
-const port = process.env.port;
+const port = process.env.port; 
 app.listen(port, () => console.log(`started on port ${port}`));
