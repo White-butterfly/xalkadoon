@@ -20,8 +20,8 @@ const Navbar = () => {
     <span class=" flex self-center text-2xl font-extrabold  Class
 Properties
 font-sans whitespace-nowrap dark:text-white">
-              <img src={care} className="mr-3 h-6  sm:h-9"/>
-             biyo<span className="dark:text-gradient text-indigo-gradient"> Shiil</span>
+            <img src={care} className="m-auto  h-20 "/>
+             <span className="dark:text-gradient text-indigo-gradient m-auto  "> Water Resoucers</span>
             </span>
             </Link>
     <ul 

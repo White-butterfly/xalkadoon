@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import care2   from  '.././../assets/care2.png';
 
 
 function NavBar() {
@@ -81,12 +82,11 @@ function NavBar() {
   return (
     <>
       <div id="sidebar">
-        <a href="#" className="brand">
+        <a href="#" className="brand bg-zinc-900">
           <img
-            src="https://th.bing.com/th/id/OIP.29mXd1a5zBHVjYvTmUsLtwHaDs?w=312&h=174&c=7&r=0&o=5&pid=1.7"
-            style={{ width: "90px", height: "80px", padding: "15px" }}
+            src={care2}
+            style={{ width: "200px", height: "200px", paddingTop: "50px" , marginLeft: "30px" , backgroundColor: "black" }}
           />
-          <span className="text">Xalkadoon Admin</span>
         </a>
         <ul className="side-menu top">
           <li className="active">
@@ -157,7 +157,7 @@ function NavBar() {
           <Link to="/ForgotPassword">
             <i
               class="bx bxs-user "
-              style={{ fontSize: "2rem", color: "green" }}
+              style={{ fontSize: "2rem", color: "blue" }}
             ></i>
           </Link>
           {/* <input type="checkbox" id="switch-mode" hidden />
