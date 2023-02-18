@@ -2,7 +2,7 @@ import { people01, people02, people03, facebook, instagram,
 	linkedin, twitter,  send, shield, star  } from "../assets";
       
       
-	import ReactApexChart from "react-apexcharts";
+
       
 	function logout() {
 	  localStorage.removeItem("token");
@@ -10,26 +10,20 @@ import { people01, people02, people03, facebook, instagram,
 	  window.location.href = "http://127.0.0.1:5173/";
 	}
       export const navLinks = [
-	{
-	  id: "/",
-	  title: "Home",
-	},
-	{
-	  id: "/Doctors",
-	  title: "Doctors",
-	},
-	{
-	  id: "/About",
-	  title: "About",
-	},
-	{
-	  id: "/Blogs",
-	  title: "Blogs",
-	},
+	// {
+	//   id: "/",
+	//   title: "Home",
+	// },
+
+	
+	// {
+	//   id: "/Regions",
+	//   title: "Regions",
+	// },
 	
 	{
-	  id: "/Register",
-	  title: "Profile",
+	  id: "/Login",
+	  title: "Sign In",
 	},
       ];
       export const HeaderLinks= [

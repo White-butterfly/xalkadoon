@@ -1,9 +1,11 @@
 import React from 'react'
 import {useState} from 'react';
-import { close,  menu, care , } from '../../assets';
-import {navLinks } from '../../constants';
-import { Link } from 'react-router-dom';
+import { close,  menu, care , } from '.././assets';
 
+import {navLinks } from '.././constants';
+
+import { Link } from 'react-router-dom';
+ 
  import {motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -11,22 +13,24 @@ const Navbar = () => {
 
   return (
    
-   
-    <nav className={` w-full flex py-6 justify-between items-center navbar  bg-yellow/30 mx-[4%] `}>
-
+   <div className=' dark:bg-cyan-900'>
+    <nav className={` w-full flex py-4 justify-between items-center navbar  bg-yellow/30 mx-[4%] `}>
+<Link to ='/'>
+{/* <Link to = '/DetailedRegion'> */}
     <span class=" flex self-center text-2xl font-extrabold  Class
 Properties
 font-sans whitespace-nowrap dark:text-white">
               <img src={care} className="mr-3 h-6  sm:h-9"/>
              biyo<span className="dark:text-gradient text-indigo-gradient"> Shiil</span>
             </span>
+            </Link>
     <ul 
     className= 'list-none sm:flex hidden justify-end items-center flex-1'>
         
 {navLinks.map((nav, index )=> (
-   
+    
 <li
-className={`${index === navLinks.length -1 ? 'mr-20 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 dark:text-gradient bg-indigo-gradient m-5' :
+className={`${index === navLinks.length -1 ? 'mr-20 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-blue-600 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 dark:text-gradient bg-blue-400 ml-5' :
  'mr-10 ' 
 } text-black dark:text-white
 font-poppins font-normal cursor-pointer text-[16px] 
@@ -76,8 +80,15 @@ ${index === navLinks.length -1 ? 'mr-0' : 'mb-4' } dark:text-white text-black`}
       </div>
 </div>
       </nav>
-     
+      </div>
   )
 }
 
 export default Navbar
+
+
+
+
+
+
+ 
