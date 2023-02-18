@@ -11,11 +11,11 @@ const AdminHome = () => {
 	const [EmployeeAsset, setEmployeeAsset] = useState([]);
 
 	useEffect(() => {
-		axios.get(`http://localhost:1000/api/region`).then((res) => {
+		axios.get(`http://localhost:7000/api/donation`).then((res) => {
 		  setRegion(res.data.data);
 		});
-		axios.get(`http://localhost:1000/api/region`).then((res) => {
-		  setEmployeeAsset(res.data.dept);
+		axios.get(`http://localhost:7000/api/region`).then((res) => {
+		  setEmployeeAsset(res.data.data);
 		});
 	      });
 
@@ -25,7 +25,7 @@ const AdminHome = () => {
 	  <main>
 	    <div className="head-title">
 	      <div className="left">
-		<h1>Admin Department </h1>
+		<h1>Donation Section </h1>
 	      </div>
 	      <a href="#" className="btn-download">
 		<i className="bx bxs-calendar"></i>
@@ -39,7 +39,7 @@ const AdminHome = () => {
 		  <i className="bx bxs-dollar-circle"></i>
 		  <span className="text">
 		    <h3>{Region.length}</h3>
-		    <p>Region Data</p>
+		    <p>Donations Data</p>
 		  </span>
 		</li>
 	      </Link>
@@ -48,25 +48,25 @@ const AdminHome = () => {
 		  <i className="bx bxs-calendar-check"></i>
 		  <span className="text">
 		    <h3>{EmployeeAsset.length}</h3>
-		    <p>Employee Asset</p>
+		    <p>Regions Data</p>
 		  </span>
 		</li>
 	      </Link>
 	    </ul>
 	    <div className="flex mx-7 ">
 	      <div>
-		<Bar
-		  className="bg-gray-50 w-82 h-72 ml-52 rounded p-3 mb-5 "
-		  data={{
-		    labels: Region.map((x) => x.Region),
-		    datasets: [
-		      {
-			data: 'hello',
-			backgroundColor: ["blue", "grey"],
-		      },
-		    ],
-		  }}
-		/>
+	      <Bar
+                className="bg-gray-50 w-82 h-72 ml-52 rounded p-3 mb-5 "
+                data={{
+                  labels: Region.map((x) => x.name),
+                  datasets: [
+                    {
+                      data: Region.map((x) => x.amount),
+                      backgroundColor: ["blue", "purple", "bluelight",],
+                    },
+                  ], 
+                }}
+              />
 	      </div>
 	    </div>
 	  </main>

@@ -19,6 +19,8 @@ app.use(cors());
 app.use("/api/User", require("./Routers/Auth/authRoutes"));
 app.use("/api/region", require("./Routers/Region/regionRoutes"));
 app.use("/api/admin", require("./Routers/Admin/adminRoutes"));
+app.use("/api/donation", require("./Routers/donations/donationRoutes")); 
+
 
 const port = process.env.port; 
-app.listen(port, () => console.log(`started on port ${port}`));
+app.listen(port, () => console.log(`started on port ${port}`)); 

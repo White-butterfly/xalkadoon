@@ -2,10 +2,10 @@ const express = require ("express");
 const regionController = require ('../../Controllers/regionController');
 
 const router = express.Router();
-
+ 
 
 router 
-.route('/')
+.route('/') 
 .get(regionController.getRegion) 
 .post(regionController.createRegion);
 

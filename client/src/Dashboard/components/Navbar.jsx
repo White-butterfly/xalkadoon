@@ -93,11 +93,11 @@ function NavBar() {
             <Link to="/">
               <a href="#">
                 <i className="bx bxs-dashboard"></i>
-                <span className="text">Dashboard</span>
+                <span className="text">Dashboard</span> 
               </a>
             </Link>
           </li>
-          {/* <li>
+          {/* <li> 
             <Link to="/AdminHome">
               <a href="">
                 <i className="bx bxs-group"></i>
@@ -106,54 +106,24 @@ function NavBar() {
             </Link>
           </li> */}
           <li>
-            <Link to="/AllData">
+            <Link to="/Regions">
               <a href="">
                 <i className="bx bxs-message-dots"></i>
                 <span className="text">Regions</span>
               </a>
             </Link>
           </li>
+        
           <li>
-            <Link to="/DaryeelHome">
-              <a href="#">
-                <i className="bx bxs-group"></i>
-                <span className="text">Admin</span>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link to="/LabourHome">
+            <Link to="/AdminHome">
               <a href="">
                 <i className="bx bxs-shopping-bag-alt"></i>
-                <span className="text">Management</span>
+                <span className="text">Donations</span>
               </a>
             </Link>
           </li>
-          <li>
-            <Link to="/HrHome">
-              <a href="">
-                <i className="bx bxs-group"></i>
-                <span className="text">User</span>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link to="/CallcenterHome">
-              <a href="#">
-                <i className="bx bxs-group"></i>
-                <span className="text">Call Center Dept</span>
-              </a>
-            </Link>
-          </li>
-
-          <li>
-            <Link to="/SWHome">
-              <a href="#">
-                <i className="bx bxs-group"></i>
-                <span className="text">Social Work Dept</span>
-              </a>
-            </Link>
-          </li>
+         
+     
         </ul>
         <ul className="side-menu">
           <li>

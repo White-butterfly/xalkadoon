@@ -1,5 +1,5 @@
 const regionModel = require('.././Models/regionsModel');
- 
+  
 
 // getting all regions
 exports.getRegion = async (req, res) => {

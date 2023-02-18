@@ -1,16 +1,17 @@
 const mongoose = require('mongoose');
-const adminSchema = new mongoose.Schema({
+const adminSchema =  mongoose.Schema({
+	// const regionSchema = mongoose.Schema({
 	Name : {
 	type: String,	
-	},
+	}, 
 	drugWells:{
-		type:Number,
+		type:String, 
 	},
 	Berkads: {
-		type:Number,
+		type:String, 
 	},
 	Dams:{
-		type:Number,
+		type:String,
 	},
 	rainfall:{
 		type:Number,
@@ -24,9 +25,10 @@ const adminSchema = new mongoose.Schema({
 	population:{
 		type: Number,
 	},
-
+ 
 
 });
 
 const admin = mongoose.model("admin", adminSchema);
 module.exports = admin;
+
