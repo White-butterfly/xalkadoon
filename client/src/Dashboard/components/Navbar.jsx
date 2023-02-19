@@ -85,7 +85,7 @@ function NavBar() {
         <a href="#" className="brand bg-zinc-900">
           <img
             src={care2}
-            style={{ width: "200px", height: "200px", paddingTop: "50px" , marginLeft: "30px" , backgroundColor: "black" }}
+            style={{ width: "200px", height: "200px", paddingTop: "50px" , marginLeft: "30px" ,  }}
           />
         </a>
         <ul className="side-menu top">

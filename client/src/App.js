@@ -5,9 +5,9 @@ import Publicdashboard from "./PupblicDashboard/Publicdashboard";
 const App = () => {
   return (
    <> 
-   <Dashboard/>
+   {/* <Dashboard/> */}
    
-   {/* <Publicdashboard/> */}
+   <Publicdashboard/>
    </>
   )
 }
